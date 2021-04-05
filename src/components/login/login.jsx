@@ -58,8 +58,8 @@ const Login = (props) => {
     <S.Container>
     <S.InnerContainer>
       <S.Form onSubmit={handleSubmit}>
-        <S.Input value={username} onChange={handleUsername} placeholder="Username" />
-        <S.Input value={password} onChange={handlePassword} placeholder="Password" />
+        <S.Input type="text" value={username} onChange={handleUsername} placeholder="Username" />
+        <S.Input type="password" value={password} onChange={handlePassword} placeholder="Password" />
         <S.Button onSubmit={handleSubmit} type="submit">Login</S.Button>
       </S.Form>
       {
